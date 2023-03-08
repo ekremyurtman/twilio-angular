@@ -52,7 +52,7 @@ export class CameraComponent implements AfterViewInit {
                 img.src = '/assets/background.jpg';
                 img.onload = async () => {
                     const bg = new VideoProcessors.VirtualBackgroundProcessor({
-                        assetsPath: '../assets/',
+                        assetsPath: '/assets',
                         backgroundImage: img,
                         maskBlurRadius: 5
                     });
